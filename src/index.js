@@ -22,7 +22,7 @@ app.listen(3000, () => console.log("Server is running..."));
 
 // load env variables
 dotenv.config();
-
+const keep_alive = require('./keep_alive.js')
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
